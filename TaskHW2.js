@@ -40,6 +40,128 @@ console.log(a + b);
 //______________________________________________
 
 //ЗАДАНИЕ 4
+//Функция для генерации случайного числа в диапазоне от -100 до 100
+function getRandom(min, max) {
+    min = 0;
+    max = 15;
+    return Math.floor(Math.random() * (max - min)) + min;
+}
+// Запись случайно сгенерированных чисел в переменные
+let a = getRandom();
+console.log(a);
+switch (a) {
+
+    case 0:
+        document.write(a + " ");
+        a++;
+
+    case 1:
+        document.write(a + " ");
+        a++;
+
+    case 2:
+        document.write(a + " ");
+        a++;
+
+    case 3:
+        document.write(a + " ");
+        a++;
+
+    case 4:
+        document.write(a + " ");
+        a++;
+
+    case 5:
+        document.write(a + " ");
+        a++;
+
+    case 6:
+        document.write(a + " ");
+        a++;
+
+    case 7:
+        document.write(a + " ");
+        a++;
+
+    case 8:
+        document.write(a + " ");
+        a++;
+
+    case 9:
+        document.write(a + " ");
+        a++;
+
+    case 10:
+        document.write(a + " ");
+        a++;
+
+    case 11:
+        document.write(a + " ");
+        a++;
+
+    case 12:
+        document.write(a + " ");
+        a++;
+
+    case 13:
+        document.write(a + " ");
+        a++;
+
+    case 14:
+        document.write(a + " ");
+        a++;
+
+    case 15:
+        document.write(a + " ");
+        a++;
+
+}
+//__________________________________________________
+
+//ЗАДАНИЕ 5
+//Сложение
+function addit(arg1, arg2) {
+    return arg1 + arg2;
+}
+var x = addit(14, 5);
+console.log(x);
+
+//Вычитание
+function subtr(arg1, arg2) {
+    return arg1 + arg2;
+}
+var x = subtr(14, 5);
+console.log(x);
+
+//Умножение
+function multip(arg1, arg2) {
+    return arg1 + arg2;
+}
+var x = multip(14, 5);
+console.log(x);
+
+//Деление
+function divis(arg1, arg2) {
+    return arg1 + arg2;
+}
+var x = divis(14, 5);
+console.log(x);
+
+//ЗАДАНИЕ 7
+null > 0 //false
+null < 0 //false
+// ДЛя определения истинно или ложно выражение, значения проходят через абстрактный алгоритм сравнения отношений в соответствии со спецификацией ЕСМА. Для этих выражений алгоритм начинает действовать с 4-5 шага когда null преобразовывается до типа number и приобретает значение +0, а 0 из правой части сравнения так и остается нулем. Следующая остановка в алгоритме - это шаг 8 - когда значение слева и значение справа являются одинаковыми значениями возвращать false
+
+null == 0 //false
+//В данном случае используется абстрактный алгоритм сравнения равенств, оператор == возвращает либо true либо false. Алгоритм начинает действовать сразу с шага 14, т.к. в сравнении отличаются типы данных. Однако вплоть до 22 шага алгоритм также пропускается, т.к. первое значение null. И 22 шаг строго предписывает вернуть значение null
+
+null >= 0 //true
+//Согласно спецификации это можно объяснить как "Если null < 0 принимает значение false, то null >= 0 принимает значение true"
+//_______________________________________
+
+
+
+
 
 
 
