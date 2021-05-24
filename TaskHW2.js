@@ -128,24 +128,71 @@ console.log(x);
 
 //Вычитание
 function subtr(arg1, arg2) {
-    return arg1 + arg2;
+    return arg1 - arg2;
 }
 var x = subtr(14, 5);
 console.log(x);
 
 //Умножение
 function multip(arg1, arg2) {
-    return arg1 + arg2;
+    return arg1 * arg2;
 }
 var x = multip(14, 5);
 console.log(x);
 
 //Деление
 function divis(arg1, arg2) {
-    return arg1 + arg2;
+    return arg1 / arg2;
 }
 var x = divis(14, 5);
 console.log(x);
+//______________________________________________
+
+//ЗАДАНИЕ 6
+//Сложение
+function addit(arg1, arg2) {
+    return arg1 + arg2;
+}
+//Вычитание
+function subtr(arg1, arg2) {
+    return arg1 - arg2;
+}
+//Умножение
+function multip(arg1, arg2) {
+    return arg1 * arg2;
+}
+//Деление
+function divis(arg1, arg2) {
+    return arg1 / arg2;
+}
+
+var arg1 = +prompt("Введите первое число");
+if (isNaN(arg1)) {
+    alert("Это не число!");
+}
+
+var arg2 = +prompt("Введите второе число");
+if (isNaN(arg2)) {
+    alert("Это не число!");
+}
+
+var oper = prompt("Выберите математическую операцию: + - * /");
+switch (oper) {
+    case "+":
+        alert("Результат: " + addit(arg1, arg2));
+        break;
+    case "-":
+        alert("Результат: " + subtr(arg1, arg2));
+        break;
+    case "*":
+        alert("Результат: " + multip(arg1, arg2));
+        break;
+    case "/":
+        alert("Результат: " + divis(arg1, arg2));
+        break;
+    default:
+        alert("Вы ввели неверный символ")
+}
 
 //ЗАДАНИЕ 7
 null > 0 //false
@@ -158,6 +205,21 @@ null == 0 //false
 null >= 0 //true
 //Согласно спецификации это можно объяснить как "Если null < 0 принимает значение false, то null >= 0 принимает значение true"
 //_______________________________________
+
+//Задание 8
+
+function power(val, pow) {
+    var res = val;
+    for (let i = 1; i < pow; i++) {
+        res *= val;
+    }
+    return (res);
+}
+
+let result = power(2, 5);
+console.log(result);
+
+
 
 
 
