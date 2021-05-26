@@ -5,7 +5,7 @@ for (i = 0; i < 100; i++) {
     if (n == i - 1) document.write(" " + i);
   }
 }
-
+//доделать цикл, считает с 4
 let i = 1;
 while (i < 100) {
   i++;
