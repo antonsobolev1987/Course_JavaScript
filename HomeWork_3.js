@@ -8,10 +8,9 @@ for (i = 0; i < 100; i++) {
 
 //ЗАДАНИЕ №2
 
-var quan, price;
-var resultQuan = [];
-var resultPrice = [];
-var summ;
+var quan, price, summ;
+var quanPrice = [];
+var result = [];
 let basket = [
   ["Яблоки", 6, 100],
   ["Груши", 2, 200],
@@ -21,29 +20,17 @@ let basket = [
 
 for (let i = 0; i < basket.length; i++) {
   quan = basket[i][1];
-  resultQuan.push(quan);
-}
-
-for (let i = 0; i < basket.length; i++) {
+  quanPrice.push(quan);
   price = basket[i][2];
-  resultPrice.push(price);
+  quanPrice.push(price);
 }
 
-//+++++++++++++++++++++++++++++++++++
-let basket = [
-  ["Яблоки", 6, 100],
-  ["Груши", 2, 200],
-  ["Бананы", 3, 300],
-  ["Персики", 4, 400],
-];
-
-function countBasketPrice(basket) {
-  for (let i = 0; i < basket.length; i++) {
-    for (let n = 0; n < basket.length; n++) {
-      // const element = array[index];
-    }
-  }
+for (let n = 0; n < quanPrice.length; n++) {
+  summ = quanPrice.indexOf(0) * quanPrice.indexOf(1);
+  result.push(summ);
 }
+
+document.write(result);
 
 //ЗАДАНИЕ 4
 for (i = -1; i <= 8; console.log(++i));
