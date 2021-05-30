@@ -187,16 +187,16 @@ if (isNaN(arg2)) {
 var oper = prompt("Выберите математическую операцию: + - * /");
 switch (oper) {
   case "+":
-    alert("Результат: " + addit(arg1, arg2));
+    return addit(arg1, arg2);
     break;
   case "-":
-    alert("Результат: " + subtr(arg1, arg2));
+    return addit(arg1, arg2);
     break;
   case "*":
-    alert("Результат: " + multip(arg1, arg2));
+    return addit(arg1, arg2);
     break;
   case "/":
-    alert("Результат: " + divis(arg1, arg2));
+    return addit(arg1, arg2);
     break;
   default:
     alert("Вы ввели неверный символ");
