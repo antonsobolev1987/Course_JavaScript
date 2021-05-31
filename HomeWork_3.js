@@ -6,9 +6,14 @@ for (i = 0; i < 100; i++) {
   }
 }
 
+//ЗАДАНИЕ 2
+
 var quan, price;
+//Пустой массив для хранения кол-ва и стоимости
 var quanPrice = [];
+//Пустой массив для хранения суммы всех элементов массива кол-во*стоимость
 var result = [];
+//Массив для исходных данных
 let basket = [
   ["Яблоки", 6, 100],
   ["Груши", 2, 200],
@@ -18,24 +23,27 @@ let basket = [
   ["Арбуз", 2, 1400],
 ];
 
+//Цикл для записи в массив кол-ва и стоимости товаров
 for (let i = 0; i < basket.length; i++) {
   quan = basket[i][1];
   quanPrice.push(quan);
   price = basket[i][2];
   quanPrice.push(price);
 }
+//Цикл для формирования массива кол-во товара * его стоимость
 
 nextCount: for (let i = 0; i < quanPrice.length; ) {
   for (let n = i + 1; n < quanPrice.length; ) {
-    summ = quanPrice[i] * quanPrice[n];
-    result.push(summ);
-    quanPrice.shift(0);
+    summ = quanPrice[i] * quanPrice[n]; //переменная summ хранит произведение 0 и 1 элементов массива
+    result.push(summ); //Запись summ в массив
+    quanPrice.shift(0); //Удаление 0 и 1 элементов массива
     quanPrice.shift(1);
     continue nextCount;
   }
 }
 console.log(result);
 
+//Функция подсчета общей стоимости товаров в корзине
 function countBasketPrice(result) {
   var sum = 0;
   for (var i = 0; i < result.length; i++) {
