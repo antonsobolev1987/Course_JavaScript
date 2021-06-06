@@ -1,0 +1,20 @@
+.mainContainer {
+  width: 700px;
+  height: 700px;
+  margin: 30px auto;
+  border: 1px solid rgb(0, 0, 0);
+}
+
+.container {
+  width: 70px;
+  height: 70px;
+  float: left;
+}
+
+.black {
+  background: black;
+}
+
+.white {
+  background: white;
+}
