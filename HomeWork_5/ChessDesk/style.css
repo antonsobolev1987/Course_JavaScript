@@ -25,13 +25,11 @@ body {
 .chessDeskCell_black {
   padding: 5px;
   background: black;
-  /* color: #fff; */
 }
 
 .chessDeskCell_white {
   padding: 5px;
   background: white;
-  /* color: #fff; */
 }
 
 .chessDeskCell_index {
