@@ -1,0 +1,39 @@
+body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100vh;
+}
+
+.container {
+  align-self: center;
+  justify-self: center;
+}
+
+.chessDesk {
+  width: 560px;
+  height: 560px;
+  display: grid;
+  border: 1px solid #000;
+  grid-template-columns: 20px repeat(8, 1fr) 20px;
+  grid-template-rows: 20px repeat(8, 1fr) 20px;
+}
+
+.chessDeskCell {
+  font-size: 0.5em;
+}
+
+.chessDeskCell_black {
+  padding: 5px;
+  background: black;
+}
+
+.chessDeskCell_white {
+  padding: 5px;
+  background: white;
+}
+
+.chessDeskCell_index {
+  justify-self: center;
+  align-self: center;
+  font-size: 0.9em;
+}
