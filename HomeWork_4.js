@@ -1,3 +1,49 @@
+//ЗАДАНИЕ 1
+//Объявил переменную для генерации случайного числа
+let randomNumber = Math.round(Math.random() * 1100);
+console.log("Сгенерировано число - " + randomNumber);
+
+//функция анализа числа
+function numberToObj(randomNumber) {
+  //условие, если число является трехзначным, то
+  if (randomNumber > 0 && randomNumber <= 999) {
+    let analysNumber = {
+      //объявляю переменную-объект
+      hundred() {
+        //с набором свойств-функций "сотни"
+        hundred = Math.floor(randomNumber / 100);
+        return hundred; //возврат результата функции
+      },
+      tens() {
+        //с набором свойств-функций "десятки"
+        tens = Math.floor((randomNumber - hundred * 100) / 10);
+        return tens; //возврат результата функции
+      },
+      ones() {
+        //с набором свойств-функций "единицы"
+        ones = randomNumber - (hundred * 100 + tens * 10);
+        return ones; //возврат результата функции
+      },
+    };
+    //вызов функций
+    analysNumber.hundred();
+    analysNumber.tens();
+    analysNumber.ones();
+    //вывод результатов в консоль.лог
+    console.log("В сгенерированном числе сотен " + hundred);
+    console.log("десятков " + tens);
+    console.log("единиц " + ones);
+  } else {
+    //иначе (строка 9) сгенерировано не 3-х значное число
+    console.log("Сгенерировано не 3-х значное число! Попробуйте еще раз!");
+    //Вывод пустого объекта
+    let analysNumber = {};
+    console.log(analysNumber);
+  }
+}
+
+numberToObj(randomNumber);
+
 //ЗАДАНИЕ 2
 var sum = 0;
 var quanPrice = [];
